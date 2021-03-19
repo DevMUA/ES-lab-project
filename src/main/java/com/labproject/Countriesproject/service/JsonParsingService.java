@@ -19,4 +19,5 @@ public class JsonParsingService implements ParsingService {
     public List<Country> parse(String url){
         return Arrays.asList(restTemplate.getForObject(url,Country[].class));
     }
+
 }

@@ -11,4 +11,13 @@
 <p th:text="'Country region: ' + ${country.region}" />
 <p th:text="'Country population: ' + ${country.population}" />
 </body>
+<script>
+
+    setInterval(updateCountry, 5000);
+
+    function updateCountry(){
+          window.location.reload(true);
+    }
+
+</script>
 </html>
